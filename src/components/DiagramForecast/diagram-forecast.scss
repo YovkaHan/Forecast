@@ -1,0 +1,51 @@
+.c-diagram-forecast {
+  position: relative;
+
+  &__days {
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+  }
+
+  &__diagram {
+    min-height: auto !important;
+  }
+
+  .day {
+    position: relative;
+    margin-left: 2px;
+    left: -8px;
+
+    &__img {
+      margin-bottom: -10px;
+      max-width: 50px;
+    }
+    &__temp {
+      cursor: default;
+      font-size: 12px;
+      text-align: center;
+      max-width: 50px;
+    }
+    &__wind {
+      cursor: default;
+      font-size: 10px;
+      text-align: center;
+      max-width: 50px;
+    }
+    &__pressure {
+      cursor: default;
+      font-size: 10px;
+      text-align: center;
+      max-width: 50px;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+$table-day: 20;
+$table-details: 80;
+
+.c-table-forecast {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+
+  &__table {
+    width: 1000px;
+  }
+  &__head {
+    height: 50px;
+    width: 100%;
+
+    .row {
+      display: flex !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
+      border-color: #1779cc !important;
+
+      &__item {
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        text-transform: capitalize;
+
+        &--time {
+          width: 10% !important;
+        }
+        &--temperature {
+          width: 10% !important;
+        }
+        &--img {
+          width: 15% !important;
+        }
+        &--precipitation {
+          width: 10% !important;
+        }
+        &--humidity {
+          width: 10% !important;
+        }
+        &--pressure {
+          width: 10% !important;
+        }
+        &--wind {
+          width: 15% !important;
+        }
+      }
+    }
+  }
+  &__body {
+    height: calc(100% - 50px);
+    width: calc(100% + 8px);
+    overflow-y: scroll;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    border: 2px solid #2b5a8259;
+    margin: 10px 0;
+    border-radius: 3px;
+    background: white;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      min-height: 40px;
+      min-width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 400;
+
+      &--day {
+        width: 20%;
+      }
+      &--time {
+        width: calc(#{10% / $table-details} * 100);
+      }
+      &--temperature {
+        width: calc(#{10% / $table-details} * 100);
+      }
+      &--img {
+        width: calc(#{15% / $table-details} * 100);
+      }
+      &--precipitation {
+        width: calc(#{10% / $table-details} * 100);
+      }
+      &--humidity {
+        width: calc(#{10% / $table-details} * 100);
+      }
+      &--pressure {
+        width: calc(#{10% / $table-details} * 100);
+      }
+      &--wind {
+        width: calc(#{15% / $table-details} * 100);
+      }
+    }
+  }
+  &-item {
+
+    &__padding {
+      height: 20px;
+      background: #697def;
+    }
+
+    &__date {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 2px solid #1879cc;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
