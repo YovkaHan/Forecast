@@ -47,7 +47,7 @@
     "webpack-md5-hash": "^0.0.6"
   },
   "dependencies": {
-    "apexcharts": "^3.8.2",
+    "apexcharts": "^3.24.0",
     "axios": "^0.19.0",
     "circular-dependency-plugin": "^5.0.2",
     "history": "^4.7.2",
