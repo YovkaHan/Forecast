@@ -52,7 +52,7 @@
     "circular-dependency-plugin": "^5.0.2",
     "history": "^4.7.2",
     "immer": "^1.8.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "prop-types": "^15.6.2",
     "ramda": "^0.26.1",
     "react": "^16.5.2",
